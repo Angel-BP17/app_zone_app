@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "123456789012",
-    "project_id": "tu-proyecto-videojuego",
-    "storage_bucket": "tu-proyecto-videojuego.appspot.com"
+    "project_number": "264701150994",
+    "project_id": "proyecto1-94447",
+    "storage_bucket": "proyecto1-94447.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:123456789012:android:abcdef123456789",
+        "mobilesdk_app_id": "1:264701150994:android:aa5843114f91347901d5cb",
         "android_client_info": {
           "package_name": "com.example.app_s10"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "123456789012-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyABCDEFGHIJKLMNOPQRSTUVWXYZ1234567"
+          "current_key": "AIzaSyDV8Zv0M4i_VcyMLkXH9KySqt3tsQt7djU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "123456789012-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
