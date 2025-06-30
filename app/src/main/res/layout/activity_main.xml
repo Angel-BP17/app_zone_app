@@ -282,6 +282,40 @@
 
             </GridLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/btnAddGame"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/agregar_juego"
+                    android:textColor="@color/gaming_text_primary"
+                    android:backgroundTint="@color/gaming_neon_green"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <Button
+                    android:id="@+id/btnViewGames"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/ver_juegos"
+                    android:textColor="@color/gaming_text_primary"
+                    android:backgroundTint="@color/gaming_highlight"
+                    android:textAllCaps="false"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+            </LinearLayout>
+
             <!-- Mensaje de bienvenida adicional -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_welcome_message"

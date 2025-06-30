@@ -3,6 +3,7 @@ package com.example.app_s10
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -57,6 +58,7 @@ class MainActivity : AppCompatActivity() {
         
         // Configurar listeners
         setupClickListeners()
+        setupGameFeatures()
         
         Log.d(TAG, "MainActivity iniciado para usuario: ${currentUser.email}")
     }
@@ -193,6 +195,21 @@ class MainActivity : AppCompatActivity() {
         if (currentUser == null) {
             Log.d(TAG, "Usuario no autenticado en onStart, redirigiendo...")
             redirectToLogin()
+        }
+    }
+    private fun setupGameFeatures() {
+        // Botón para agregar juego
+        val btnAddGame = findViewById<Button>(R.id.btnAddGame)
+        btnAddGame.setOnClickListener {
+            Log.d(TAG, "Add Game button clicked")
+            startActivity(Intent(this, AddGameActivity::class.java))
+        }
+
+        // Botón para ver juegos
+        val btnViewGames = findViewById<Button>(R.id.btnViewGames)
+        btnViewGames.setOnClickListener {
+            Log.d(TAG, "View Games button clicked")
+            startActivity(Intent(this, GamesListActivity::class.java))
         }
     }
 }
